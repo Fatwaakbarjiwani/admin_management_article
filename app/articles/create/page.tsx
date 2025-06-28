@@ -155,7 +155,7 @@ export default function CreateArticle() {
             )}
           </div>
         </div>
-        {/* Title */}
+
         <div>
           <label className="block font-medium mb-2">Title</label>
           <input
@@ -166,7 +166,7 @@ export default function CreateArticle() {
             onChange={(e) => setTitle(e.target.value)}
           />
         </div>
-        {/* Category */}
+
         <div>
           <label className="block font-medium mb-2">Category</label>
           <select
@@ -189,7 +189,7 @@ export default function CreateArticle() {
             menu
           </div>
         </div>
-        {/* Content */}
+
         <div>
           <label className="block font-medium mb-2">Content</label>
           <div className="rounded">
@@ -220,7 +220,7 @@ export default function CreateArticle() {
             </div>
           </div>
         </div>
-        {/* Actions */}
+        
         <div className="flex justify-end gap-2 pt-2">
           <button
             type="button"
