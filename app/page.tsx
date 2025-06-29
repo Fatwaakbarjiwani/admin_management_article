@@ -50,7 +50,7 @@ export default function Home() {
       if (response) {
         setArticles(response.data.data || []);
         setTotal(response.data.total || 0);
-        setTotalPages(response.data.totalPages || 1);
+        setTotalPages(total%10);
       }
     } catch (error) {
       console.log(error);
