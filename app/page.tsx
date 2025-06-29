@@ -50,7 +50,11 @@ export default function Home() {
       if (response) {
         setArticles(response.data.data || []);
         setTotal(response.data.total || 0);
-        setTotalPages(total/10);
+        const pageSize = 10;
+        const calculatedTotalPages = Math.ceil(
+          (response.data.total || 0) / pageSize
+        );
+        setTotalPages(calculatedTotalPages);
       }
     } catch (error) {
       console.log(error);
